@@ -1,5 +1,5 @@
 /*****************************************************************************
- *   Ledger Monero App.
+ *   Ledger Haven App.
  *   (c) 2017-2020 Cedric Mesnil <cslashm@gmail.com>, Ledger SAS.
  *   (c) 2020 Ledger SAS.
  *
@@ -180,7 +180,7 @@ extern const unsigned char C_ED25519_ORDER[];
 void monero_aes_derive(cx_aes_key_t *sk, unsigned char *seed32, unsigned char *a, unsigned char *b);
 void monero_aes_generate(cx_aes_key_t *sk);
 
-/* Compute Monero-Hash of data*/
+/* Compute Haven-Hash of data*/
 void monero_hash_init_keccak(cx_hash_t *hasher);
 void monero_hash_init_sha256(cx_hash_t *hasher);
 void monero_hash_update(cx_hash_t *hasher, unsigned char *buf, unsigned int len);

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *   Ledger Monero App.
+ *   Ledger Haven App.
  *   (c) 2017-2020 Cedric Mesnil <cslashm@gmail.com>, Ledger SAS.
  *   (c) 2020 Ledger SAS.
  *
@@ -214,7 +214,7 @@ unsigned int ui_menu_opentx_button(unsigned int button_mask, unsigned int button
 void ui_menu_opentx_display(unsigned int value) {
   if (G_monero_vstate.tx_sig_mode == TRANSACTION_CREATE_REAL) {
      UX_DISPLAY(ui_menu_opentx, (void*)NULL);
-  } else {    
+  } else {
     snprintf(G_monero_vstate.ux_info1, sizeof(G_monero_vstate.ux_info1), "Prepare new");
     snprintf(G_monero_vstate.ux_info2, sizeof(G_monero_vstate.ux_info2), "TX / %d", G_monero_vstate.tx_cnt);
     ui_menu_info_display(0);
@@ -244,12 +244,12 @@ void ui_menu_opentx_display(unsigned int value) {
 void ui_menu_amount_validation_action(unsigned int value);
 
 const ux_menu_entry_t ui_menu_fee_validation[] = {
-    {NULL, NULL, 1, NULL, " Fee", "?xmr?", 0, 0},
+    {NULL, NULL, 1, NULL, " Fee", "?xhv?", 0, 0},
     {NULL, ui_menu_amount_validation_action, REJECT, NULL, "Reject", "Fee", 0, 0},
     {NULL, ui_menu_amount_validation_action, ACCEPT, NULL, "Accept", "Fee", 0, 0},
     UX_MENU_END};
 const ux_menu_entry_t ui_menu_change_validation[] = {
-    {NULL, NULL, 1, NULL, " Change", "?xmr?", 0, 0},
+    {NULL, NULL, 1, NULL, " Change", "?xhv?", 0, 0},
     {NULL, ui_menu_amount_validation_action, REJECT, NULL, "Reject", "Change", 0, 0},
     {NULL, ui_menu_amount_validation_action, ACCEPT, NULL, "Accept", "Change", 0, 0},
     UX_MENU_END};
@@ -297,7 +297,7 @@ void ui_menu_timelock_validation_display(unsigned int value) {
 void ui_menu_validation_action(unsigned int value);
 
 const ux_menu_entry_t ui_menu_validation[] = {
-    {NULL, NULL, 1, NULL, " Amount", "?xmr?", 0, 0},
+    {NULL, NULL, 1, NULL, " Amount", "?xhv?", 0, 0},
     {NULL, NULL, 3, NULL, "Destination", "?dest.1?", 0, 0},
     {NULL, NULL, 4, NULL, "?dest.2?", "?dest.2?", 0, 0},
     {NULL, NULL, 5, NULL, "?dest.3?", "?dest.3?", 0, 0},
@@ -581,7 +581,7 @@ void ui_menu_settings_display(unsigned int value) {
 #define XSTR(x) STR(x)
 
 const ux_menu_entry_t ui_menu_about[] = {
-    {NULL, NULL, -1, NULL, "Monero", NULL, 0, 0},
+    {NULL, NULL, -1, NULL, "Haven", NULL, 0, 0},
     {NULL, NULL, -1, NULL, "(c) Ledger SAS", NULL, 0, 0},
     {NULL, NULL, -1, NULL, "Spec  " XSTR(SPEC_VERSION), NULL, 0, 0},
     {NULL, NULL, -1, NULL, "App  " XSTR(MONERO_VERSION), NULL, 0, 0},

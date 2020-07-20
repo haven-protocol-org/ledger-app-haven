@@ -1,5 +1,5 @@
 /*****************************************************************************
- *   Ledger Monero App.
+ *   Ledger Haven App.
  *   (c) 2017-2020 Cedric Mesnil <cslashm@gmail.com>, Ledger SAS.
  *   (c) 2020 Ledger SAS.
  *
@@ -200,7 +200,7 @@ __attribute__((section(".boot"))) int main(void) {
 #ifdef TARGET_NANOX
                 G_io_app.plane_mode = os_setting_get(OS_SETTING_PLANEMODE, NULL, 0);
                 BLE_power(0, NULL);
-                BLE_power(1, "Nano X - Monero");
+                BLE_power(1, "Nano X - Haven");
 #endif
 
                 monero_init();

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *   Ledger Monero App.
+ *   Ledger Haven App.
  *   (c) 2017-2020 Cedric Mesnil <cslashm@gmail.com>, Ledger SAS.
  *   (c) 2020 Ledger SAS.
  *
@@ -515,7 +515,7 @@ void settings_submenu_selector(unsigned int idx) {
 #ifdef UI_NANO_X
 UX_STEP_NOCB(ux_menu_about_1_step, bnnn,
              {
-                 "Monero",
+                 "Haven",
                  "(c) Ledger SAS",
                  "Spec  " XSTR(SPEC_VERSION),
                  "App  " XSTR(MONERO_VERSION),
@@ -523,7 +523,7 @@ UX_STEP_NOCB(ux_menu_about_1_step, bnnn,
 #else
 UX_STEP_NOCB(ux_menu_about_1a_step, bn,
              {
-                 "Monero",
+                 "Haven",
                  "(c) Ledger SAS",
              });
 

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *   Ledger Monero App.
+ *   Ledger Haven App.
  *   (c) 2017-2020 Cedric Mesnil <cslashm@gmail.com>, Ledger SAS.
  *   (c) 2020 Ledger SAS.
  *

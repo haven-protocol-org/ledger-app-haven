@@ -1,6 +1,6 @@
-# Monero Ledger App
+# Haven Ledger App
 
-Monero wallet application for Ledger Nano S and Nano X.
+Haven wallet application for Ledger Nano S and Nano X.
 
 ## Install
 
@@ -11,7 +11,7 @@ Be sure to have your environment correctly set up (see [Getting Started](https:/
 
 ### Compilation
 
-In order to use the app with the Monero client, you need to compile in debug mode:
+In order to use the app with the Haven client, you need to compile in debug mode:
 
 ```
 make DEBUG=1

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *   Ledger Monero App.
+ *   Ledger Haven App.
  *   (c) 2017-2020 Cedric Mesnil <cslashm@gmail.com>, Ledger SAS.
  *   (c) 2020 Ledger SAS.
  *
@@ -25,7 +25,7 @@
 /* ----------------------*/
 /* -- A Kind of Magic -- */
 /* ----------------------*/
-const unsigned char C_MAGIC[8] = {'M', 'O', 'N', 'E', 'R', 'O', 'H', 'W'};
+const unsigned char C_MAGIC[8] = {'H','A','V','E','N','-','H','W'};
 
 const unsigned char C_FAKE_SEC_VIEW_KEY[32] = {
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -177,6 +177,7 @@ void monero_install(unsigned char netId) {
 /* ----------------------------------------------------------------------- */
 /* --- Reset                                                           --- */
 /* ----------------------------------------------------------------------- */
+/*
 #define MONERO_SUPPORTED_CLIENT_SIZE 1
 const char* const monero_supported_client[MONERO_SUPPORTED_CLIENT_SIZE] = {
     "0.16.0.",
@@ -231,3 +232,4 @@ void monero_lock_and_throw(int sw) {
     ui_menu_info_display(0);
     THROW(sw);
 }
+*/
