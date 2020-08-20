@@ -30,7 +30,7 @@
 @@ -551,7 +551,7 @@ UX_STEP_CB(
    ui_menu_pubaddr_display(0),
    {
-     &C_icon_monero,
+     &C_icon_haven,
 -    "XMR",
 +    "XHV",
      G_monero_vstate.ux_wallet_public_short_address

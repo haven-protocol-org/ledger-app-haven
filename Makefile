@@ -28,11 +28,11 @@ APP_LOAD_PARAMS=  --path "2147483692/2147483776" --curve secp256k1 $(COMMON_LOAD
 APPNAME = "Haven"
 
 ifeq ($(TARGET_NAME),TARGET_BLUE)
-ICONNAME = images/icon_monero_blue.gif
+ICONNAME = images/icon_haven_blue.gif
 else ifeq ($(TARGET_NAME),TARGET_NANOX)
-ICONNAME = images/icon_monero_nanox.gif
+ICONNAME = images/icon_haven_nanox.gif
 else
-ICONNAME = images/icon_monero.gif
+ICONNAME = images/icon_haven.gif
 endif
 
 #DEFINES += MONERO_ALPHA

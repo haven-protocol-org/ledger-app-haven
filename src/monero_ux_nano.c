@@ -643,7 +643,7 @@ void ui_menu_pubaddr_display(unsigned int value) {
 /* --------------------------------- MAIN UX --------------------------------- */
 
 UX_STEP_CB(ux_menu_main_1_step, pbb, ui_menu_pubaddr_display(0),
-           {&C_icon_monero, G_monero_vstate.ux_wallet_account_name,
+           {&C_icon_haven, G_monero_vstate.ux_wallet_account_name,
             G_monero_vstate.ux_wallet_public_short_address});
 
 UX_STEP_CB(ux_menu_main_2_step, pb,
