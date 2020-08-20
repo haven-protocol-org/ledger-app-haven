@@ -128,14 +128,14 @@ void monero_init_ux() {
 
 #ifdef UI_NANO_X
     snprintf(G_monero_vstate.ux_wallet_account_name, sizeof(G_monero_vstate.ux_wallet_account_name),
-             "XMR / %d", N_monero_pstate->account_id);
+             "XHV / %d", N_monero_pstate->account_id);
     os_memmove(G_monero_vstate.ux_wallet_public_short_address, G_monero_vstate.ux_address, 5);
     os_memmove(G_monero_vstate.ux_wallet_public_short_address + 7,
                G_monero_vstate.ux_address + 95 - 5, 5);
     G_monero_vstate.ux_wallet_public_short_address[12] = 0;
 #else
     snprintf(G_monero_vstate.ux_wallet_account_name, sizeof(G_monero_vstate.ux_wallet_account_name),
-             "     XMR / %d", N_monero_pstate->account_id);
+             "     XHV / %d", N_monero_pstate->account_id);
     os_memmove(G_monero_vstate.ux_wallet_public_short_address, G_monero_vstate.ux_address, 4);
     os_memmove(G_monero_vstate.ux_wallet_public_short_address + 6,
                G_monero_vstate.ux_address + 95 - 4, 4);
@@ -145,7 +145,7 @@ void monero_init_ux() {
 #else
 
     snprintf(G_monero_vstate.ux_wallet_account_name, sizeof(G_monero_vstate.ux_wallet_account_name),
-             "XMR / %d", N_monero_pstate->account_id);
+             "XHV / %d", N_monero_pstate->account_id);
     os_memmove(G_monero_vstate.ux_wallet_public_short_address, G_monero_vstate.ux_address, 5);
     os_memmove(G_monero_vstate.ux_wallet_public_short_address + 7,
                G_monero_vstate.ux_address + 95 - 5, 5);
@@ -177,7 +177,7 @@ void monero_install(unsigned char netId) {
 /* ----------------------------------------------------------------------- */
 /* --- Reset                                                           --- */
 /* ----------------------------------------------------------------------- */
-/*
+
 #define MONERO_SUPPORTED_CLIENT_SIZE 1
 const char* const monero_supported_client[MONERO_SUPPORTED_CLIENT_SIZE] = {
     "0.16.0.",
@@ -232,4 +232,3 @@ void monero_lock_and_throw(int sw) {
     ui_menu_info_display(0);
     THROW(sw);
 }
-*/
