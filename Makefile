@@ -24,7 +24,7 @@ endif
 include $(BOLOS_SDK)/Makefile.defines
 
 #Haven /44'/535'
-APP_LOAD_PARAMS=  --path "2147483692/2147483776" --curve secp256k1 $(COMMON_LOAD_PARAMS) --appFlags 0x240
+APP_LOAD_PARAMS=  --path "44/535" --curve secp256k1 $(COMMON_LOAD_PARAMS) --appFlags 0x240
 APPNAME = "Haven"
 
 ifeq ($(TARGET_NAME),TARGET_BLUE)
