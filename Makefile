@@ -31,8 +31,6 @@ ifeq ($(TARGET_NAME),TARGET_BLUE)
 ICONNAME = images/icon_haven_blue.gif
 else ifeq ($(TARGET_NAME),TARGET_NANOX)
 ICONNAME = images/icon_haven_nanox.gif
-else ifeq ($(TARGET_NAME),TARGET_NANOS)
-ICONNAME = images/icon_haven_nanos.gif
 else
 ICONNAME = images/icon_haven.gif
 endif
